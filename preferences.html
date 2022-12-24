@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visual Admin Dashboard - Preferences</title>
+  <meta name="description" content="">
+  <meta name="author" content="templatemo">
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700' rel='stylesheet' type='text/css'>
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/templatemo-style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <!-- Menu Lateral -->
+  <div class="templatemo-flex-row">
+    <div class="templatemo-sidebar">
+      <header class="templatemo-site-header">
+        <div class="square"></div>
+        <h1>Projeto YAME</h1>
+      </header>
+      <div class="profile-photo-container">
+        <img src="images/Logo Yames.jpeg" alt="Profile Photo" class="img-responsive">
+        <div class="profile-photo-overlay"></div>
+      </div>
+      <!-- Barra de  Menu -->
+      <form class="templatemo-search-form" role="search">
+        <div class="input-group">
+          <button type="submit" class="fa fa-search"></button>
+          <input type="text" class="form-control" placeholder="Procurar..." name="srch-term" id="srch-term">
+        </div>
+      </form>
+      <div class="mobile-menu-icon">
+        <i class="fa fa-bars"></i>
+      </div>
+      <nav class="templatemo-left-nav">
+        <ul>
+          <li><a href="index.html"><i class="fa fa-home fa-fw"></i>Painel Principal</a></li>
+          <li><a href="data-visualization.html"><i class="fa fa-bar-chart fa-fw"></i>Gráficos</a></li>
+          <li><a href="data-visualization.html"><i class="fa fa-database fa-fw"></i>Visualização de Dados</a></li>
+          <li><a href="maps.html"><i class="fa fa-map-marker fa-fw"></i>Mapas</a></li>
+          <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>Gerenciador de usuários</a></li>
+          <li><a href="#" class="active"><i class="fa fa-sliders fa-fw"></i>Configurações</a></li>
+          <li><a href="login.html"><i class="fa fa-eject fa-fw"></i>Sair</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Main content -->
+    <div class="templatemo-content col-1 light-gray-bg">
+      <div class="templatemo-top-nav-container">
+        <div class="row">
+          <nav class="templatemo-top-nav col-lg-12 col-md-12">
+            <ul class="text-uppercase">
+              <li><a href="" class="active">Painel Principal</a></li>
+              <li><a href="">Produtos</a></li>
+              <li><a href="">Ferramentas</a></li>
+              <li><a href="login.html">Formulário de login</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="templatemo-content-container">
+        <div class="templatemo-content-widget white-bg">
+          <h2 class="margin-bottom-10">Configurações</h2>
+          <p>Configurações de administrativas e de usuários</p>
+          <form action="index.html" class="templatemo-login-form" method="post" enctype="multipart/form-data">
+            <div class="row form-group">
+              <div class="col-lg-6 col-md-6 form-group">
+                <label for="inputFirstName">Nome</label>
+                <input type="text" class="form-control" id="inputFirstName" placeholder="John">
+              </div>
+              <div class="col-lg-6 col-md-6 form-group">
+                <label for="inputLastName">Sobrenome</label>
+                <input type="text" class="form-control" id="inputLastName" placeholder="Smith">
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col-lg-6 col-md-6 form-group">
+                <label for="inputUsername">Nome de Usuário</label>
+                <input type="text" class="form-control" id="inputUsername" placeholder="Admin">
+              </div>
+              <div class="col-lg-6 col-md-6 form-group">
+                <label for="inputEmail">Email</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="admin@company.com">
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col-lg-6 col-md-6 form-group">
+                <label for="inputCurrentPassword">Senha Atual</label>
+                <input type="password" class="form-control highlight" id="inputCurrentPassword"
+                  placeholder="*********************">
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col-lg-6 col-md-6 form-group">
+                <label for="inputNewPassword">Nova Senha</label>
+                <input type="password" class="form-control" id="inputNewPassword">
+              </div>
+              <div class="col-lg-6 col-md-6 form-group">
+                <label for="inputConfirmNewPassword">Confirmar Nova Senha</label>
+                <input type="password" class="form-control" id="inputConfirmNewPassword">
+              </div>
+            </div>
+            <!-- <div class="row form-group">
+              <div class="col-lg-12 has-success form-group">
+                <label class="control-label" for="inputWithSuccess">Input with success</label>
+                <input type="text" class="form-control" id="inputWithSuccess">
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col-lg-12 has-warning form-group">
+                <label class="control-label" for="inputWithWarning">Input with warning</label>
+                <input type="text" class="form-control" id="inputWithWarning">
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col-lg-12 has-error form-group">
+                <label class="control-label" for="inputWithError">Input with error</label>
+                <input type="text" class="form-control" id="inputWithError">
+              </div>
+            </div> -->
+            <div class="row form-group">
+              <div class="col-lg-12 form-group">
+                <label class="control-label" for="inputNote">Observações</label>
+                <textarea class="form-control" id="inputNote" rows="3"></textarea>
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col-lg-6 col-md-6 form-group">
+                <label class="control-label templatemo-block">Unidades</label>
+                <select class="form-control">
+                  <option value="html">Manaus</option>
+                  <option value="plain">Toledo</option>
+                  <option value="plain">Cascavel</option>
+                  <option value="plain">Rio Preto da Eva</option>
+                  <option value="plain">Belém</option>
+                </select>
+              </div>
+              <div class="col-lg-6 col-md-6 form-group">
+                <label class="control-label templatemo-block">Outras Modalidades</label>
+                <select class="form-control">
+                  <option value="html">Outros</option>
+                  <option value="plain">Toledo</option>
+                  <option value="plain">Cascavel</option>
+                  <option value="plain">Rio Preto da Eva</option>
+                  <option value="plain">Belém</option>
+                </select>
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col-lg-6 col-md-6 form-group">
+                <label class="control-label templatemo-block">Tipo de Produção</label>
+                <select multiple class="templatemo-multi-select form-control" style="overflow-y: scroll;">
+                  <option value="">Gado</option>
+                  <option value="">Suíno</option>
+                  <option value="">Galinhas</option>
+                  <option value="">Peixes</option>
+                </select>
+              </div>
+              <div class="col-lg-6 col-md-6 form-group">
+                <div class="templatemo-block margin-bottom-5">
+                  <label class="control-label templatemo-block">Atualizações</label>
+                  <input type="checkbox" name="emailOptions" id="c1" value="new" checked>
+                  <label for="c1" class="font-weight-400"><span></span>Receber Emails sobre Novidades da
+                    Plataforma</label>
+                </div>
+                <div class="templatemo-block margin-bottom-5">
+                  <input type="checkbox" name="emailOptions" id="c2" value="weekly">
+                  <label for="c2" class="font-weight-400"><span></span>Relatório Semanal por Email</label>
+                </div>
+              </div>
+            </div>
+            <div class="row form-group">
+              <div class="col-lg-12">
+                <!-- <label class="control-label templatemo-block">File Input</label>
+                <!-- <input type="file" name="fileToUpload" id="fileToUpload" class="margin-bottom-10"> -->
+                <!-- <input type="file" name="fileToUpload" id="fileToUpload" class="filestyle" data-buttonName="btn-primary"
+                  data-buttonBefore="true" data-icon="false">
+                <p>Maximum upload size is 5 MB.</p> -->
+              </div>
+            </div>
+            <div class="form-group text-right">
+              <button type="submit" class="templatemo-blue-button">Atualizar</button>
+              <button type="reset" class="templatemo-white-button">Resetar</button>
+            </div>
+          </form>
+        </div>
+        <footer class="text-right">
+          <p>Copyright &copy; 2022 GS Publicidades
+            | Web Designer: Gabriel Santos</p>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script> <!-- jQuery -->
+  <script type="text/javascript" src="js/bootstrap-filestyle.min.js"></script>
+  <!-- http://markusslima.github.io/bootstrap-filestyle/ -->
+  <script type="text/javascript" src="js/templatemo-script.js"></script> <!-- Templatemo Script -->
+</body>
+
+</html>

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projeto YAME</title>
+  <meta name="description" content="">
+  <meta name="author" content="templatemo">
+
+  <!-- Arquivos de repositórios - Fontes, ícones, bootstrap and css nativos-->
+  <link href="css/fontawesome.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/templatemo-style.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+</head>
+
+<body>
+  <!-- Menu Lateral -->
+  <div class="templatemo-flex-row">
+    <div class="templatemo-sidebar">
+      <header class="templatemo-site-header">
+        <div class="square"></div> 
+        <h1>Projeto YAME</h1>
+      </header>
+      <div class="profile-photo-container">
+        <img src="images/Logo Yames.jpeg" alt="Profile Photo" class="img-responsive">
+        <div class="profile-photo-overlay"></div>
+      </div>
+      <!-- <!-- Barra de  Menu -->
+      <!-- <form class="templatemo-search-form" role="search">
+        <div class="input-group">
+          <button type="submit" class="fa fa-search"></button>
+          <input type="text" class="form-control" placeholder="Procurar..." name="srch-term" id="srch-term">
+        </div>
+      </form> -->
+      <div class="mobile-menu-icon">
+        <i class="fa fa-bars"></i>
+      </div>
+      <nav class="templatemo-left-nav">
+        <ul>
+          <li><a href="#" class="active"> <i class="fa fa-home fa-fw"></i> Painel Principal</a></li>
+          <li><a href="data-visualization.html"><i class="fa fa-bar-chart fa-fw"></i>Gráficos</a></li>
+          <li><a href="data-visualization.html"><i class="fa fa-database fa-fw"></i>Visualização de Dados</a></li>
+          <li><a href="maps.html"><i class="fa fa-map-marker fa-fw"></i>Mapas</a></li>
+          <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>Gerenciador de usuários</a></li>
+          <li><a href="preferences.html"><i class="fa fa-sliders fa-fw"></i>Configurações</a></li>
+          <li><a href="login.html"><i class="fa fa-eject fa-fw"></i>Sair</a></li>
+        </ul>
+      </nav>
+    </div> -->
+    <!-- Conteúdo Principal -->
+    <div class="templatemo-content col-1 light-gray-bg">
+      <div class="templatemo-top-nav-container">
+        <div class="row">
+          <nav class="templatemo-top-nav col-lg-12 col-md-12">
+            <ul class="text-uppercase">
+              <li><a href="" class="active">Painel Principal</a></li>
+              <li><a href="">Produtos</a></li>
+              <li><a href="">Ferramentas</a></li>
+              <li><a href="login.html">Formulário de login</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="templatemo-content-container">
+        <div class="row">
+          <div class="item">
+            <div class="header-info">
+              <div class="icon vermelho">
+                <img class="icon svg_icon" src="/images/icons/triangle-exclamation.svg" alt="">
+              </div>
+              <div class="header-text">Emissão de Gases</div>
+            </div>
+            <div class="resultado">
+              <div class="">
+                <h4> Valor total de emissão em CH4<p id="CH4_total"></p>
+                </h4>
+              </div>
+              <div>
+                <h4>Conversão de CH4 em CO2 por Tonelada <p id="total_ch4_em_co2"></p>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="header-info">
+              <div class="icon verde">
+                <img class="icon svg_icon" src="/images/icons/tree.svg" alt="">
+              </div>
+              <div class="header-text">Resgate de CO²</div>
+            </div>
+            <div>
+              <h4>Número de árvores a serem plantadas<p id="numeros_de_arvores"></p>
+              </h4>
+            </div>
+          </div>
+          <div class="item">
+            <div class="header-info">
+              <div class="icon amarelo">
+                <img class="svg_maior" src="/images/icons/bolt.svg" alt="">
+              </div>
+              <div class="header-text">Conversão em KW/h</div>
+            </div>
+            <div>
+              <h4> Valor total CH4 gera<p id="CH4"></p>
+              </h4>
+            </div>
+          </div>
+          <div class="item">
+            <div class="header-info">
+              <div class="icon azul">
+                <img class="svg_maior" src="/images/icons/dollar-sign.svg" alt="">
+              </div>
+              <div class="header-text">Economia de energia</div>
+            </div>
+            <div>
+              <h4> O valor diário é <p id="Diaria"></p>
+              </h4>
+            </div>
+            <div>
+              <h4> O valor Mensal é <p id="Mensal"></p>
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="item degeto">
+            <div class="header-info">
+              <div class="icon marrom">
+                <img class="icon svg_icon" src="/images/icons/poop.svg" alt="">
+              </div>
+              <div class="header-text">DEGETO</div>
+            </div>
+            <div class="resultado">
+              <div class="">
+                <h4> Urina:<p id="urina"></p>
+                </h4>
+              </div>
+              <div>
+                <h4>Degeto:<p id="degeto"></p>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="item humus">
+            <div class="header-info">
+              <div class="icon verde-floresta">
+                <img class="icon svg_icon" src="/images/icons/recycle.svg" alt="">
+              </div>
+              <div class="header-text">Humus</div>
+            </div>
+            <div>
+              <h4>Quantidade produzida
+                <p id="humus_qtdd"></p>
+              </h4>
+            </div>
+            <div>
+              <h4>Valor total em venda
+                <p id="humus_preco_total"></p>
+              </h4>
+            </div>
+          </div>
+          <div class="item minhocas">
+            <div class="header-info">
+              <div class="icon alaranjado">
+                <img class="icon svg_icon branco" src="/images/icons/worm.svg" alt="">
+                </svg>  
+              </div>
+              <div class="header-text">Minhocas</div>
+            </div>
+            <div>
+              <h4> Quantidade produzida<p id="minhocas_qtdd"></p>
+              </h4>
+            </div>
+            <div>
+              <h4> Valor total em vendas<p id="minhocas_preco_total"></p>
+              </h4>
+            </div>
+          </div>
+          <div class="item biofert">
+            <div class="header-info">
+              <div class="icon azul-marinho">
+                <img class="svg_maior svg_icon" src="/images/icons/bottle-droplet.svg" alt="">
+              </div>
+              <div class="header-text">Biofertilizante</div>
+            </div>
+            <div>
+              <h4> Quantidade produzida<p id="bio_fert_qtdd"></p>
+              </h4>
+            </div>
+            <div>
+              <h4> Valor total em vendas<p id="bio_fert_preco_total"></p>
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-1">
+          <div class="panel panel-default templatemo-content-widget white-bg no-padding templatemo-overflow-hidden">
+            <div class="panel-heading templatemo-position-relative">
+              <h2 class="text-uppercase">Dados por animal</h2>
+            </div>
+            <div class="table-responsive">
+              <table class="table table-striped table-bordered">
+                <thead>
+                  <tr>
+                    <td>Animais</td>
+                    <td>Degeto</td>
+                    <td>Urina</td>
+                    <td>Emissão de Metano ("CH4")</td>
+                    <td>Quantidade</td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Bovinos</td>
+                    <td>45 KG</td>
+                    <td>40 L</td>
+                    <td>0.54 por M³</td>
+                    <td>
+                      <form class="form-floating">
+                        <input type="number" inputmode="latin-name" class="form-control" id="inputgado"
+                          placeholder="quantidade de bovinos" oninput="gado()">
+                        <label for="floatingInputValue"></label>
+                      </form>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Suíno</td>
+                    <td>16 KG</td>
+                    <td>10 L</td>
+                    <td>0.19 por M³</td>
+                    <td>
+                      <form class="form-floating">
+                        <input type="number" class="form-control" id="inputsuino" placeholder="quantidade de bovinos"
+                          oninput="suino()">
+                        <label for="floatingInputValue"></label>
+                      </form>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Galinhas</td>
+                    <td>0.12 KG</td>
+                    <td>0.0 L</td>
+                    <td>0.01 por M³</td>
+                    <td>
+                      <form class="form-floating">
+                        <input type="number" class="form-control" id="inputgalinhas"
+                          placeholder="quantidade de galinhas" oninput="galinhas()">
+                        <label for="floatingInputValue"></label>
+                      </form>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Humanos</td>
+                    <td>0.24 KG</td>
+                    <td>0.0 L</td>
+                    <td>0.01 por M³</td>
+                    <td>
+                      <form class="form-floating">
+                        <input type="number" inputmode="numeric" class="form-control" id="inputhumanos"
+                          placeholder="quantidade de humanos" oninput="humanos()">
+                        <label for="floatingInputValue"></label>
+                      </form>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="templatemo-flex-row flex-content-row">
+          <div class="templatemo-content-widget white-bg col-2">
+            <h2 class="templatemo-inline-block">
+              Calculadora de Gerenciamento
+            </h2>
+            <hr>
+          </div>
+        </div>
+        <div class="templatemo-flex-row flex-content-row">
+          <div class="col-1">
+            <div class="templatemo-content-widget orange-bg">
+
+              <div class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object img-circle" src="images/sunset.jpg" alt="Sunset">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h2 class="media-heading text-uppercase">Sistemas de Produção</h2>
+                  <p>Dados e estatíscas de produção entre unidades.</p>
+                </div>
+              </div>
+            </div>
+            <div class="templatemo-content-widget white-bg">
+
+              <div class="media">
+                <div class="media-left">
+                  <a href="#">
+                    <img class="media-object img-circle" src="images/sunset.jpg" alt="Sunset">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h2 class="media-heading text-uppercase">Unidades Administrativas</h2>
+                  <p>Fotos e arquivos de futuras unidades de demonstração.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-1">
+            <div class="panel panel-default templatemo-content-widget white-bg no-padding templatemo-overflow-hidden">
+              <div class="panel-heading templatemo-position-relative">
+                <h2 class="text-uppercase">Gerentes de Unidades</h2>
+              </div>
+              <div class="table-responsive">
+                <table class="table table-striped table-bordered">
+                  <thead>
+                    <tr>
+                      <td>Nº</td>
+                      <td>Nome</td>
+                      <td>Estado</td>
+                      <td>Cidade</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1.</td>
+                      <td>Vilmar Galvão</td>
+                      <td>PR</td>
+                      <td>Toledo</td>
+                    </tr>
+                    <tr>
+                      <td>2.</td>
+                      <td>Julio Matias</td>
+                      <td>SC</td>
+                      <td>Xanxerê</td>
+                    </tr>
+                    <tr>
+                      <td>3.</td>
+                      <td>Matias Mattos</td>
+                      <td>SC</td>
+                      <td>Chapecó</td>
+                    </tr>
+                    <tr>
+                      <td>4.</td>
+                      <td>Eduardo Blanco</td>
+                      <td>PR</td>
+                      <td>Cascavel</td>
+                    </tr>
+                    <tr>
+                      <td>5.</td>
+                      <td>Paulo Saint</td>
+                      <td>AM</td>
+                      <td>Manaus</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div> <!-- Second row ends -->
+        <div class="templatemo-flex-row flex-content-row templatemo-overflow-hidden">
+          <!-- overflow hidden for iPad mini landscape view-->
+          <div class="col-1 templatemo-overflow-hidden">
+            <div class="templatemo-content-widget white-bg templatemo-overflow-hidden">
+
+              <div class="templatemo-flex-row flex-content-row">
+                <div class="col-1 col-lg-6 col-md-12">
+                  <h2 class="text-center">Modular<span class="badge">new</span></h2>
+                  <div id="pie_chart_div" class="templatemo-chart"></div> <!-- Pie chart div -->
+                </div>
+                <div class="col-1 col-lg-6 col-md-12">
+                  <h2 class="text-center">Produção por Região<span class="badge">new</span></h2>
+                  <div id="bar_chart_div" class="templatemo-chart"></div> <!-- Bar chart div -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="text-right">
+          <p>Copyright &copy; 2022 GS Publicidades
+            | Web Designer: Gabriel Santos</p>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="js/jquery-1.11.2.min.js"></script> <!-- jQuery -->
+  <script src="js/jquery-migrate-1.2.1.min.js"></script> <!--  jQuery Migrate Plugin -->
+  <script src="https://www.google.com/jsapi"></script> <!-- Google Chart -->
+  <script>
+    /* Google Chart 
+    -------------------------------------------------------------------*/
+    // Load the Visualization API and the piechart package.
+    google.load('visualization', '1.0', { 'packages': ['corechart'] });
+
+    // Set a callback to run when the Google Visualization API is loaded.
+    google.setOnLoadCallback(drawChart);
+
+    // Callback that creates and populates a data table,
+    // instantiates the pie chart, passes in the data and
+    // draws it.
+    function drawChart() {
+
+      // Create the data table.
+      var data = new google.visualization.DataTable();
+      data.addColumn('string', 'Topping');
+      data.addColumn('number', 'Quantidades');
+      data.addRows([
+        ['Bovinos', 3],
+        ['Suinos', 1],
+        ['Galinhas', 1],
+        ['Humanos', 1],
+        ['Peixes', 2]
+      ]);
+
+      // Set chart options
+      var options = { 'title': 'Quantidades de produção' };
+
+      // Instantiate and draw our chart, passing in some options.
+      var pieChart = new google.visualization.PieChart(document.getElementById('pie_chart_div'));
+      pieChart.draw(data, options);
+
+      var barChart = new google.visualization.BarChart(document.getElementById('bar_chart_div'));
+      barChart.draw(data, options);
+    }
+
+    $(document).ready(function () {
+      if ($.browser.mozilla) {
+        //refresh page on browser resize
+        // http://www.sitepoint.com/jquery-refresh-page-browser-resize/
+        $(window).bind('resize', function (e) {
+          if (window.RT) clearTimeout(window.RT);
+          window.RT = setTimeout(function () {
+            this.location.reload(false); /* false to get page from cache */
+          }, 200);
+        });
+      } else {
+        $(window).resize(function () {
+          drawChart();
+        });
+      }
+    });
+
+  </script>
+  <script type="text/javascript" src="js/templatemo-script.js"></script> <!-- Templatemo Script -->
+  <script type="text/javascript" src="/js/script.js"></script>
+
+</body>
+
+</html>
